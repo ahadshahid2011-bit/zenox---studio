@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenox Studio | Premium Design Shop</title>
+    <meta name="description" content="Zenox Studio: We build custom websites for businesses, including gym, restaurant, and e-commerce designs to help you grow online.">
+    <!-- FontAwesome for Icons -->
+     <!-- Favicon (Browser Tab Logo) -->
+<link rel="icon" type="image/jpeg" href="zenox-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+<div class="whatsapp-container" onclick="handleInteraction()">
+    <a href="https://wa.me/923111282552" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Zenox Studio</div>
+        <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+    <i class="fas fa-bars"></i>
+</button>
+        <nav id="navbar">
+            <a href="#home" class="nav-item active nav-link-draw">Home</a>
+        <a href="#why-choose-us" class="nav-item nav-link-draw">Why Choose Us</a>
+        <a href="#services" class="nav-item nav-link-draw">Services</a>
+        <a href="#pricing" class="nav-item nav-link-draw">Pricing</a>
+        <a href="#about" class="nav-item nav-link-draw">About Us</a>
+            
+            <button class="nav-login-btn" onclick="openLoginModal()">Login</button>
+        </nav>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home">
+        <h1>We Design <br><span style="color: #ffaa00;">Visual Stories</span> <br>That Inspire</h1>
+        <p>From strategic branding assets to viral digital visuals — Zenox Studio handles your creative requirements with elite precision. Beautiful, fast, and scaled for your budget.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-slide-fill">Explore Services</a>
+        <a href="#pricing" class="btn btn-outline btn-slide-fill">View Packages</a>  
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-item"><h2>500+</h2><p>Happy Clients</p></div>
+            <div class="stat-item"><h2>3K+</h2><p>Designs Delivered</p></div>
+            <div class="stat-item"><h2>10+</h2><p>Design Categories</p></div>
+            <div class="stat-item"><h2>2026</h2><p>Est. Launch</p></div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="section-title">
+            <span class="sub-title">WHY CHOOSE US</span>
+            <h2>Design That Works As Hard As You Do</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card neon-box-glow">
+                <div class="icon">⚡</div>
+                <h3>Fast Turnaround</h3>
+                <p>Most graphics are designed and premium polished within 24-48 hours flat.</p>
+            </div>
+            <div class="feature-card highlighted-card neon-box-glow">
+                <div class="icon">💎</div>
+                <h3>Premium Quality</h3>
+                <p>Every dynamic visual is optimized for conversion, high CTR, and high scaling frames.</p>
+            </div>
+            <div class="feature-card neon-box-glow">
+                <div class="icon">🔄</div>
+                <h3>Dedicated Shop</h3>
+                <p>We work until your exact design expectation is fully realized and standard set.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (All 10 Real Images from Your Folder) -->
+    <section id="services">
+        <div class="section-title">
+            <span class="sub-title">EXPLORE SERVICES</span>
+            <h2>Our Custom Design Categories</h2>
+        </div>
+
+        <div class="services-grid">
+<!-- Card 1: Gym -->
+<div class="service-shine-card">
+  <img src="service-gym.jpg" alt="Gym Branding">
+  <div class="service-details">
+    <h3>Gym Branding</h3>
+    <p>High-energy, aggressive, and highly professional branding assets designed for gyms.</p>
+    <div class="card-price-row">
+      <span class="price-tag">PKR 20,000</span>
+      <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+    </div>
+  </div>
+</div>
+           <!-- Card 2: Bakery -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-bakery.jpg" alt="Bakeries & Cafes">
+            <div class="service-details">
+                <h3>Bakeries & Cafes</h3>
+                <p>Elegant, clean, and delicious layout sets optimized for menu systems and premium cafes.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 25,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Card 3: Restaurant -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-restaurant.jpg" alt="Restaurant Visuals">
+            <div class="service-details">
+                <h3>Restaurant Visuals</h3>
+                <p>Premium card elements, menu structures, and promotional materials for fast-paced setups.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 30,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+           <!-- Card 4: Real Estate -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-real estate.jpg" alt="Real Estate Standards">
+            <div class="service-details">
+                <h3>Real Estate Standards</h3>
+                <p>Highly trustworthy, structured vector cards and display properties optimized for elite builders.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 35,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Card 5: E-Commerce Banners -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-ecommerce.jpg" alt="E-Commerce Headers">
+            <div class="service-details">
+                <h3>E-Commerce Headers</h3>
+                <p>High-conversion storefront banners designed to boost electronic sales and product lines.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 40,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Card 6: Blog Graphics -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-blog.jpg" alt="Blog Visuals">
+            <div class="service-details">
+                <h3>Blog Layout Designs</h3>
+                <p>Engaging and vibrant graphics tailored for websites, online articles, and creative blogging platforms.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 45,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7: Business Visuals -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-business.jpg" alt="Business Solutions">
+            <div class="service-details">
+                <h3>Corporate Corporate Assets</h3>
+                <p>Sleek, high-tier layouts built for business profiles, visiting templates, and brand stationery.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 50,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Card 8: Doctor Profiles -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-doctor.jpg" alt="Medical Branding">
+            <div class="service-details">
+                <h3>Medical & Clinic Aesthetics</h3>
+                <p>Trustworthy, professional banners and informational designs made for medical clinics and doctors.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 55,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9: Portfolio Layouts -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-portfolio.jpg" alt="Portfolio Templates">
+            <div class="service-details">
+                <h3>Creative Portfolio Sets</h3>
+                <p>Elite personal branding layouts and dynamic grid cards crafted to display your work.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 40,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+          <!-- Card 10: Salon & Spa -->
+        <div class="service-shine-card" onclick="triggerShineEffect(this)">
+            <img src="service-salon.jpg" alt="Salon Aesthetics">
+            <div class="service-details">
+                <h3>Salon & Beauty Aesthetics</h3>
+                <p>Elegant aesthetic profiles, rate-lists, and banners tailored for luxury wellness brands.</p>
+                <div class="card-price-row">
+                    <span class="price-tag">PKR 35,000</span>
+                    <button class="btn card-btn" onclick="handleInteraction()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparent Pricing Packages Section -->
+    <section id="pricing">
+        <div class="section-title">
+            <span class="sub-title">PRICING BUNDLES</span>
+            <h2>Simple, Honest Plans</h2>
+        </div>
+
+        <div class="pricing-container">
+            <!-- Starter -->
+            <div class="plan-card">
+                <h3>Starter</h3>
+                <div class="pkg-price">PKR 30,000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 1 Premium Choice Concept</li>
+                    <li><i class="fas fa-check"></i> Standard Vector Exports</li>
+                    <li><i class="fas fa-check"></i> 48 Hour Delivery Track</li>
+                    <li><i class="fas fa-check"></i> Standard Revisions Support</li>
+                </ul>
+                <button class="btn plan-btn" onclick="handleInteraction()">Get Started</button>
+            </div>
+            <!-- Professional -->
+            <div class="plan-card premium-card">
+                <div class="popular-tag">MOST POPULAR</div>
+                <h3>Professional</h3>
+                <div class="pkg-price">PKR 50,000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 5 Scaled Premium Concepts</li>
+                    <li><i class="fas fa-check"></i> Source Vectors Included</li>
+                    <li><i class="fas fa-check"></i> 24 Hour Turnaround Express</li>
+                    <li><i class="fas fa-check"></i> Unlimited Revision Track</li>
+                </ul>
+                <button class="btn plan-btn" onclick="handleInteraction()">Get Started</button>
+            </div>
+            <!-- Brand Bundle -->
+            <div class="plan-card">
+                <h3>Brand Bundle</h3>
+                <div class="pkg-price">PKR 100,000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 15 Enterprise Asset Tracks</li>
+                    <li><i class="fas fa-check"></i> Complete Source Permissions</li>
+                    <li><i class="fas fa-check"></i> Same-Day Fast Priority Track</li>
+                    <li><i class="fas fa-check"></i> Dedicated Premium Support</li>
+                </ul>
+                <button class="btn plan-btn" onclick="handleInteraction()">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="section-title">
+            <span class="sub-title">OUR STORY</span>
+            <h2>About Zenox Studio</h2>
+
+        </div>
+        <p>
+            Founded and directed by <strong>Abdul Ahad</strong> in <strong>2026</strong>, right from the core of <strong>Karachi, Pakistan</strong>, Zenox Studio represents the next generation of creative production. We don't just build casual templates; we operate a complete digital shop designed to furnish your business with stunning aesthetic visuals. We strip away the corporate bloat to deliver clean, custom, hard-hitting, pixel-perfect layouts that instantly convert viewers into premium loyal clients.
+        </p>
+<!-- Certificate Box -->
+<div class="certificate-box" style="margin-top: 40px; text-align: center; background-color: #1a203c; padding: 20px; border-radius: 15px; border: 3px solid #00d4ff;">
+    <img src="certificate.png" alt="Google Certificate" style="max-width: 250px; border-radius: 10px;">
+    <h3 style="color: #00d4ff; margin-top: 15px;">Google Certified Professional</h3>
+</div>
+
+
+    </section>
+
+    <!-- Login Modal Box Container -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="login-box">
+            <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+            <h2>Sign In First</h2>
+            <p class="modal-desc">Please sign into Zenox Studio to continue safely to WhatsApp.</p>
+            <input type="email" id="userEmail" placeholder="Enter your email" required>
+            <input type="password" id="userPass" placeholder="Enter password" required>
+            <button class="btn login-submit-btn" onclick="executeMockLogin()">Secure Login & Continue</button>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>&copy; 2026 <strong>Zenox Studio</strong>. All rights reserved. Registered Production Hub.</p>
+        <span class="footer-email">ahadshahid2011@gmail.com</span>
+    </footer>
+    <!-- Mobile Bottom Navigation Bar (Sirf Mobile par dikhega) -->
+<div class="mobile-bottom-nav">
+    <a href="#home" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="#services" class="nav-item">
+        <i class="fas fa-laptop-code"></i>
+        <span>Services</span>
+    </a>
+    <a href="#pricing" class="nav-item">
+        <i class="fas fa-tags"></i>
+        <span>Pricing</span>
+    </a>
+    <a href="https://wa.me/923111282552" target="_blank" class="nav-item highlight">
+        <i class="fab fa-whatsapp"></i>
+        <span>Order Now</span>
+    </a>
+</div>
+
+    <!-- External JavaScript Link -->
+    <script src="script.js"></script>
+    <script>
+ function triggerShineEffect(element) {
+  if (element.classList.contains('active-shine')) {
+    element.classList.remove('active-shine');
+    void element.offsetWidth; /* Reset animation state smoothly */
+  }
+  
+  element.classList.add('active-shine');
+  
+  setTimeout(() => {
+    element.classList.remove('active-shine');
+  }, 800);
+}
