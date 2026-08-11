@@ -1,16 +1,18 @@
-// Authentication Status Tracker
+/* ==========================================================================
+   1. AUTHENTICATION & MODAL CONTROLS
+   ========================================================================== */
 let userIsAuthenticated = false;
 
-// Modal UI Control Functions
 function openLoginModal() {
-    document.getElementById('loginModal').classList.add('active');
+    const modal = document.getElementById('loginModal');
+    if (modal) modal.classList.add('active');
 }
 
 function closeLoginModal() {
-    document.getElementById('loginModal').classList.remove('active');
+    const modal = document.getElementById('loginModal');
+    if (modal) modal.classList.remove('active');
 }
 
-// Check Input Validation and Log User In
 function executeMockLogin() {
     const emailInput = document.getElementById('userEmail').value;
     const passInput = document.getElementById('userPass').value;
@@ -27,7 +29,6 @@ function executeMockLogin() {
     proceedToWhatsApp();
 }
 
-// Check if user is logged in before allowing contact
 function handleInteraction() {
     if (!userIsAuthenticated) {
         openLoginModal();
@@ -36,19 +37,42 @@ function handleInteraction() {
     }
 }
 
-// Redirect with a completely empty pre-filled text area
 function proceedToWhatsApp() {
-    // Is link mein koi text parameter nahi hai, isliye chat box bilkul blank khulega
     const secureWhatsAppURL = `https://wa.me/923111282552`;
     window.open(secureWhatsAppURL, '_blank');
 }
 
-// Dynamic Header Navigation Highlighting Rule
+
+/* ==========================================================================
+   2. MOBILE NAVIGATION TOGGLE
+   ========================================================================== */
+const navToggle = document.getElementById('navToggle');
+const navbar = document.getElementById('navbar');
+
+if (navToggle && navbar) {
+    navToggle.addEventListener('click', () => {
+        navbar.classList.toggle('show-menu');
+    });
+
+    // Close menu automatically when clicking any nav link on mobile
+    const navLinks = navbar.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('show-menu');
+        });
+    });
+}
+
+
+/* ==========================================================================
+   3. DYNAMIC HEADER SCROLL SPY & NAVIGATION HIGHLIGHTING
+   ========================================================================== */
 const activeSections = document.querySelectorAll('section');
 const activeLinks = document.querySelectorAll('.nav-item');
 
 window.addEventListener('scroll', () => {
     let currentActiveSectionId = '';
+    
     activeSections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (window.pageYOffset >= (sectionTop - 250)) {
@@ -58,15 +82,9 @@ window.addEventListener('scroll', () => {
 
     activeLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href').includes(currentActiveSectionId)) {
+        const hrefAttr = link.getAttribute('href');
+        if (hrefAttr && hrefAttr.includes(currentActiveSectionId)) {
             link.classList.add('active');
         }
     });
-});
-// Toggle mobile menu visibility on click
-const navToggle = document.getElementById('navToggle');
-const navbar = document.getElementById('navbar');
-
-navToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show-menu');
 });
