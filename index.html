@@ -1,28 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenox Studio | Custom Web Development & Design Agency</title>
-    <meta name="description" content="Zenox Studio crafts ultra-fast, high-converting custom websites and digital branding solutions for businesses in Karachi and worldwide.">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Zenox Studio | Custom Web Development & Design">
-    <meta property="og:description" content="Modern custom websites, web development, and digital branding solutions.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zenox-studio.vercel.app/">
-
-    <!-- Favicon -->
+    <title>Zenox Studio | Custom Web Development & Design</title>
+    <meta name="description" content="Zenox Studio: Modern custom websites, web development, and digital branding solutions in Karachi, Pakistan.">
+    <!-- Favicon (Browser Tab Logo) -->
     <link rel="icon" type="image/jpeg" href="zenox-logo.jpg">
- 
-    <!-- Google Fonts for Typography Hierarchy -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- External CSS Link -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,333 +16,309 @@
 
     <!-- Floating WhatsApp Button -->
     <div class="whatsapp-container">
-        <a href="https://wa.me/923111282552?text=Hello%20Zenox%20Studio,%20I%20want%20to%20order%20a%20website" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with Zenox Studio on WhatsApp">
+        <a href="https://wa.me/923111282552?text=Hello%20Zenox%20Studio,%20I%20want%20to%20order%20a%20website" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
     <!-- Header Section -->
-    <header class="site-header">
+    <header>
         <div class="logo">Zenox Studio</div>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
-        <nav id="navbar" class="site-nav">
+        <nav id="navbar">
             <a href="#home" class="nav-item active nav-link-draw">Home</a>
             <a href="#why-choose-us" class="nav-item nav-link-draw">Why Choose Us</a>
-            <a href="#sub-brands" class="nav-item nav-link-draw" style="color: #d4af37; font-weight: 700;">Live Demos</a>
             <a href="#services" class="nav-item nav-link-draw">Services</a>
             <a href="#pricing" class="nav-item nav-link-draw">Pricing</a>
             <a href="#about" class="nav-item nav-link-draw">About Us</a>
-            <a href="https://wa.me/923111282552?text=Hi,%20I%20need%20a%20website" target="_blank" rel="noopener noreferrer" class="nav-login-btn">Contact Us</a>
+            
+            <a href="https://wa.me/923111282552?text=Hi,%20I%20need%20a%20website" target="_blank" class="nav-login-btn" style="text-decoration:none; display:inline-block; text-align:center;">Contact Us</a>
         </nav>
     </header>
 
-    <main>
-        <!-- Home / Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>We Build <br><span class="accent-text">Digital Platforms</span> <br>That Grow Businesses</h1>
-                <p>From high-converting custom websites to modern digital branding — Zenox Studio crafts responsive, lightning-fast web solutions for your business in Karachi & worldwide.</p>
-                <div class="hero-buttons">
-                    <a href="#sub-brands" class="btn btn-slide-fill">View Live Demos</a>
-                    <a href="#pricing" class="btn btn-outline btn-slide-fill">View Packages</a>  
-                </div>
+    <!-- Home / Hero Section -->
+    <section id="home">
+        <h1>We Build <br><span style="color: #ffaa00;">Digital Platforms</span> <br>That Grow Businesses</h1>
+        <p>From high-converting custom websites to modern digital branding — Zenox Studio crafts responsive, lightning-fast web solutions for your business in Karachi & worldwide.</p>
+        <div class="hero-buttons">
+            <a href="#services" class="btn btn-slide-fill">Explore Services</a>
+            <a href="#pricing" class="btn btn-outline btn-slide-fill">View Packages</a>  
+        </div>
 
-                <div class="stats-container">
-                    <div class="stat-item"><h2>100%</h2><p>Custom Code</p></div>
-                    <div class="stat-item"><h2>24-48h</h2><p>Fast Turnaround</p></div>
-                    <div class="stat-item"><h2>Responsive</h2><p>Mobile Friendly</p></div>
-                    <div class="stat-item"><h2>2026</h2><p>Est. Launch</p></div>
-                </div>
+        <div class="stats-container">
+            <div class="stat-item"><h2>100%</h2><p>Custom Code</p></div>
+            <div class="stat-item"><h2>24-48h</h2><p>Fast Turnaround</p></div>
+            <div class="stat-item"><h2>Responsive</h2><p>Mobile Friendly</p></div>
+            <div class="stat-item"><h2>2026</h2><p>Est. Launch</p></div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="section-title">
+            <span class="sub-title">WHY CHOOSE US</span>
+            <h2>Websites That Work As Hard As You Do</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card neon-box-glow">
+                <div class="icon">⚡</div>
+                <h3>Fast Performance</h3>
+                <p>Ultra-fast loading websites built with high performance and smooth layouts.</p>
             </div>
-        </section>
-
-        <!-- Why Choose Us Section -->
-        <section id="why-choose-us" class="features-section">
-            <div class="section-title">
-                <span class="sub-title">WHY CHOOSE US</span>
-                <h2>Websites That Work As Hard As You Do</h2>
+            <div class="feature-card highlighted-card neon-box-glow">
+                <div class="icon">💎</div>
+                <h3>Modern Web Design</h3>
+                <p>Clean, custom-coded pixel-perfect interfaces designed to turn visitors into buyers.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card neon-box-glow">
-                    <div class="icon">⚡</div>
-                    <h3>Fast Performance</h3>
-                    <p>Ultra-fast loading websites built with high performance and smooth layouts.</p>
-                </div>
-                <div class="feature-card highlighted-card neon-box-glow">
-                    <div class="icon">💎</div>
-                    <h3>Modern Web Design</h3>
-                    <p>Clean, custom-coded pixel-perfect interfaces designed to turn visitors into buyers.</p>
-                </div>
-                <div class="feature-card neon-box-glow">
-                    <div class="icon">🔄</div>
-                    <h3>Dedicated Support</h3>
-                    <p>We work until your exact business expectations and functional requirements are met.</p>
-                </div>
+            <div class="feature-card neon-box-glow">
+                <div class="icon">🔄</div>
+                <h3>Dedicated Support</h3>
+                <p>We work until your exact business expectations and functional requirements are met.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Zenox Sub-Brands Hub Section -->
-        <section id="sub-brands" class="sub-brands-section">
-            <span class="sub-title">OUR ECOSYSTEM</span>
-            <h2>Our Live Sub-Brands</h2>
-            <div class="sub-brands-grid">
-                
-                <!-- Estates -->
-                <div class="brand-card">
-                    <h3>Zenox Estates</h3>
-                    <p>Luxury real estate web portal with dark and gold theme.</p>
-                    <a href="./zenox-estate/index.html" target="_blank" class="brand-btn gold-btn">View Site</a>
-                </div>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-title">
+            <span class="sub-title">EXPLORE SERVICES</span>
+            <h2>Our Custom Web & Design Services</h2>
+        </div>
 
-                <!-- Clinic -->
-                <div class="brand-card">
-                    <h3>Zenox Med-Connect</h3>
-                    <p>Professional medical & healthcare appointment portal.</p>
-                   <a href="./zenox-clinic/index.html" target="_blank" class="brand-btn blue-btn">View Site</a>
-                </div>
-
-                <!-- Tech-Mart -->
-                <div class="brand-card">
-                    <h3>Zenox Tech-Mart</h3>
-                    <p>Next-gen e-commerce store for smart gadgets.</p>
-                    <a href="./zenox-tech-mart/index.html" target="_blank" class="brand-btn sky-btn">View Site</a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services-section">
-            <div class="section-title">
-                <span class="sub-title">EXPLORE SERVICES</span>
-                <h2>Our Custom Web & Design Services</h2>
-            </div>
-
-            <div class="services-grid">
-                <!-- Card 1: Gym -->
-                <div class="service-shine-card">
-                    <img src="service-gym.jpg" alt="Gym Website & Branding" loading="lazy">
-                    <div class="service-details">
-                        <h3>Gym Website & Branding</h3>
-                        <p>High-energy, aggressive, and highly professional custom websites designed for fitness centers.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 15,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Gym%20Branding%20and%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2: Bakery -->
-                <div class="service-shine-card">
-                    <img src="service-bakery.jpg" alt="Bakeries & Cafes" loading="lazy">
-                    <div class="service-details">
-                        <h3>Bakeries & Cafe Sites</h3>
-                        <p>Elegant, clean layout sets and digital menu systems optimized for premium cafes and bakeries.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 15,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Bakery%20and%20Cafe%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3: Restaurant -->
-                <div class="service-shine-card">
-                    <img src="service-restaurant.jpg" alt="Restaurant Web Systems" loading="lazy">
-                    <div class="service-details">
-                        <h3>Restaurant Platforms</h3>
-                        <p>Premium restaurant sites, dynamic menus, and promo layouts for fast-paced food setups.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 20,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Restaurant%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4: Real Estate -->
-                <div class="service-shine-card">
-                    <img src="service-real estate.jpg" alt="Real Estate Portals" loading="lazy">
-                    <div class="service-details">
-                        <h3>Real Estate Portals</h3>
-                        <p>Structured property listings, modern cards, and landing pages optimized for property builders.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 25,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Real%20Estate%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5: E-Commerce -->
-                <div class="service-shine-card">
-                    <img src="service-ecommerce.jpg" alt="E-Commerce Stores" loading="lazy">
-                    <div class="service-details">
-                        <h3>E-Commerce Web Stores</h3>
-                        <p>High-conversion storefront designs built to sell online products and scale online sales.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 25,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Ecommerce%20Store" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6: Blog -->
-                <div class="service-shine-card">
-                    <img src="service-blog.jpg" alt="Blog Platforms" loading="lazy">
-                    <div class="service-details">
-                        <h3>Blog & Media Platforms</h3>
-                        <p>Engaging and vibrant web layouts tailored for news, online articles, and creative publishing.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 20,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Blog%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 7: Business -->
-                <div class="service-shine-card">
-                    <img src="service-business.jpg" alt="Corporate Websites" loading="lazy">
-                    <div class="service-details">
-                        <h3>Corporate Business Sites</h3>
-                        <p>Sleek, high-tier business sites built for corporate branding, company profiles, and leads.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 25,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Corporate%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 8: Medical -->
-                <div class="service-shine-card">
-                    <img src="service-doctor.jpg" alt="Medical Clinic Sites" loading="lazy">
-                    <div class="service-details">
-                        <h3>Medical Clinic Sites</h3>
-                        <p>Trustworthy, clean websites and informational layouts made for medical clinics and doctors.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 25,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Medical%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 9: Portfolio -->
-                <div class="service-shine-card">
-                    <img src="service-portfolio.jpg" alt="Personal Portfolios" loading="lazy">
-                    <div class="service-details">
-                        <h3>Personal Portfolios</h3>
-                        <p>Elite personal branding layouts and dynamic grid cards crafted to display your work professionally.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 15,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Personal%20Portfolio" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 10: Salon -->
-                <div class="service-shine-card">
-                    <img src="service-salon.jpg" alt="Salon Aesthetics" loading="lazy">
-                    <div class="service-details">
-                        <h3>Salon & Beauty Sites</h3>
-                        <p>Elegant aesthetic profiles, rate-lists, and web banners tailored for luxury wellness brands.</p>
-                        <div class="card-price-row">
-                            <span class="price-tag">PKR 20,000</span>
-                            <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Salon%20Website" target="_blank" rel="noopener noreferrer" class="btn card-btn">Order Now</a>
-                        </div>
+        <div class="services-grid">
+            <!-- Card 1: Gym -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-gym.jpg" alt="Gym Website & Branding">
+                <div class="service-details">
+                    <h3>Gym Website & Branding</h3>
+                    <p>High-energy, aggressive, and highly professional custom websites designed for fitness centers.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 15,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Gym%20Branding%20and%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Pricing Packages Section -->
-        <section id="pricing" class="pricing-section">
-            <div class="section-title">
-                <span class="sub-title">PRICING BUNDLES</span>
-                <h2>Simple, Honest Plans</h2>
-            </div>
-
-            <div class="pricing-container">
-                <!-- Starter -->
-                <div class="plan-card">
-                    <h3>Starter Web</h3>
-                    <div class="pkg-price">PKR 15,000</div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Single Page Landing Site</li>
-                        <li><i class="fas fa-check"></i> Clean Responsive Design</li>
-                        <li><i class="fas fa-check"></i> 48 Hour Fast Track Delivery</li>
-                        <li><i class="fas fa-check"></i> WhatsApp & Social Links Integration</li>
-                    </ul>
-                    <a href="https://wa.me/923111282552?text=I%20want%20to%20order%20Starter%20Package" target="_blank" rel="noopener noreferrer" class="btn plan-btn">Get Started</a>
-                </div>
-                <!-- Professional -->
-                <div class="plan-card premium-card">
-                    <div class="popular-tag">MOST POPULAR</div>
-                    <h3>Business Pro</h3>
-                    <div class="pkg-price">PKR 25,000</div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Up to 5 Custom Pages</li>
-                        <li><i class="fas fa-check"></i> Full Mobile Responsiveness</li>
-                        <li><i class="fas fa-check"></i> Fast Delivery Track</li>
-                        <li><i class="fas fa-check"></i> Free Revisions & Support</li>
-                    </ul>
-                    <a href="https://wa.me/923111282552?text=I%20want%20to%20order%20Business%20Pro%20Package" target="_blank" rel="noopener noreferrer" class="btn plan-btn">Get Started</a>
-                </div>
-                <!-- Brand Bundle -->
-                <div class="plan-card">
-                    <h3>Enterprise Suite</h3>
-                    <div class="pkg-price">PKR 35,000</div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Complete Web Application / Store</li>
-                        <li><i class="fas fa-check"></i> Full Custom Code Base</li>
-                        <li><i class="fas fa-check"></i> Priority Same-Day Support</li>
-                        <li><i class="fas fa-check"></i> Complete Source Permissions</li>
-                    </ul>
-                    <a href="https://wa.me/923111282552?text=I%20want%20to%20order%20Enterprise%20Package" target="_blank" rel="noopener noreferrer" class="btn plan-btn">Get Started</a>
+            <!-- Card 2: Bakery -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-bakery.jpg" alt="Bakeries & Cafes">
+                <div class="service-details">
+                    <h3>Bakeries & Cafe Sites</h3>
+                    <p>Elegant, clean layout sets and digital menu systems optimized for premium cafes and bakeries.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 15,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Bakery%20and%20Cafe%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="about-section">
-            <div class="section-title">
-                <span class="sub-title">OUR STORY</span>
-                <h2>About Zenox Studio</h2>
+            <!-- Card 3: Restaurant -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-restaurant.jpg" alt="Restaurant Web Systems">
+                <div class="service-details">
+                    <h3>Restaurant Platforms</h3>
+                    <p>Premium restaurant sites, dynamic menus, and promo layouts for fast-paced food setups.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 20,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Restaurant%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
             </div>
-            <p>
-                Founded in <strong>2026</strong> in the heart of <strong>Karachi, Pakistan</strong>, Zenox Studio is a dedicated digital production team specializing in custom-coded web experiences and visual branding. We strip away corporate bloat to deliver clean, custom, fast, and pixel-perfect layouts that instantly turn visitors into loyal clients.
-            </p>
-        </section>
-    </main>
+
+            <!-- Card 4: Real Estate -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-real estate.jpg" alt="Real Estate Portals">
+                <div class="service-details">
+                    <h3>Real Estate Portals</h3>
+                    <p>Structured property listings, modern cards, and landing pages optimized for property builders.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 25,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Real%20Estate%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: E-Commerce -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-ecommerce.jpg" alt="E-Commerce Stores">
+                <div class="service-details">
+                    <h3>E-Commerce Web Stores</h3>
+                    <p>High-conversion storefront designs built to sell online products and scale online sales.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 25,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Ecommerce%20Store" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Blog -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-blog.jpg" alt="Blog Platforms">
+                <div class="service-details">
+                    <h3>Blog & Media Platforms</h3>
+                    <p>Engaging and vibrant web layouts tailored for news, online articles, and creative publishing.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 20,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Blog%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Business -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-business.jpg" alt="Corporate Websites">
+                <div class="service-details">
+                    <h3>Corporate Business Sites</h3>
+                    <p>Sleek, high-tier business sites built for corporate branding, company profiles, and leads.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 25,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Corporate%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Medical -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-doctor.jpg" alt="Medical Clinic Sites">
+                <div class="service-details">
+                    <h3>Medical Clinic Sites</h3>
+                    <p>Trustworthy, clean websites and informational layouts made for medical clinics and doctors.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 25,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Medical%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9: Portfolio -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-portfolio.jpg" alt="Personal Portfolios">
+                <div class="service-details">
+                    <h3>Personal Portfolios</h3>
+                    <p>Elite personal branding layouts and dynamic grid cards crafted to display your work professionally.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 15,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Personal%20Portfolio" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10: Salon -->
+            <div class="service-shine-card" onclick="triggerShineEffect(this)">
+                <img src="service-salon.jpg" alt="Salon Aesthetics">
+                <div class="service-details">
+                    <h3>Salon & Beauty Sites</h3>
+                    <p>Elegant aesthetic profiles, rate-lists, and web banners tailored for luxury wellness brands.</p>
+                    <div class="card-price-row">
+                        <span class="price-tag">PKR 20,000</span>
+                        <a href="https://wa.me/923111282552?text=I%20am%20interested%20in%20Salon%20Website" target="_blank" class="btn card-btn" style="text-decoration:none;">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages Section -->
+    <section id="pricing">
+        <div class="section-title">
+            <span class="sub-title">PRICING BUNDLES</span>
+            <h2>Simple, Honest Plans</h2>
+        </div>
+
+        <div class="pricing-container">
+            <!-- Starter -->
+            <div class="plan-card">
+                <h3>Starter Web</h3>
+                <div class="pkg-price">PKR 15,000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Single Page Landing Site</li>
+                    <li><i class="fas fa-check"></i> Clean Responsive Design</li>
+                    <li><i class="fas fa-check"></i> 48 Hour Fast Track Delivery</li>
+                    <li><i class="fas fa-check"></i> WhatsApp & Social Links Integration</li>
+                </ul>
+                <a href="https://wa.me/923111282552?text=I%20want%20to%20order%20Starter%20Package" target="_blank" class="btn plan-btn" style="text-decoration:none; display:inline-block; text-align:center;">Get Started</a>
+            </div>
+            <!-- Professional -->
+            <div class="plan-card premium-card">
+                <div class="popular-tag">MOST POPULAR</div>
+                <h3>Business Pro</h3>
+                <div class="pkg-price">PKR 25,000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Up to 5 Custom Pages</li>
+                    <li><i class="fas fa-check"></i> Full Mobile Responsiveness</li>
+                    <li><i class="fas fa-check"></i> Fast Delivery Track</li>
+                    <li><i class="fas fa-check"></i> Free Revisions & Support</li>
+                </ul>
+                <a href="https://wa.me/923111282552?text=I%20want%20to%20order%20Business%20Pro%20Package" target="_blank" class="btn plan-btn" style="text-decoration:none; display:inline-block; text-align:center;">Get Started</a>
+            </div>
+            <!-- Brand Bundle -->
+            <div class="plan-card">
+                <h3>Enterprise Suite</h3>
+                <div class="pkg-price">PKR 35,000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Complete Web Application / Store</li>
+                    <li><i class="fas fa-check"></i> Full Custom Code Base</li>
+                    <li><i class="fas fa-check"></i> Priority Same-Day Support</li>
+                    <li><i class="fas fa-check"></i> Complete Source Permissions</li>
+                </ul>
+                <a href="https://wa.me/923111282552?text=I%20want%20to%20order%20Enterprise%20Package" target="_blank" class="btn plan-btn" style="text-decoration:none; display:inline-block; text-align:center;">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="section-title">
+            <span class="sub-title">OUR STORY</span>
+            <h2>About Zenox Studio</h2>
+        </div>
+        <p>
+            Founded in <strong>2026</strong> in the heart of <strong>Karachi, Pakistan</strong>, Zenox Studio is a dedicated digital production team specializing in custom-coded web experiences and visual branding. We strip away corporate bloat to deliver clean, custom, fast, and pixel-perfect layouts that instantly turn visitors into loyal clients.
+        </p>
+    </section>
 
     <!-- Footer Area -->
-    <footer class="site-footer">
+    <footer>
         <p>&copy; 2026 <strong>Zenox Studio</strong>. All rights reserved. Registered Production Hub.</p>
     </footer>
 
     <!-- Mobile Bottom Navigation Bar -->
-    <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <div class="mobile-bottom-nav">
         <a href="#home" class="nav-item">
             <i class="fas fa-home"></i>
             <span>Home</span>
         </a>
-        <a href="#sub-brands" class="nav-item">
-            <i class="fas fa-laptop-code"></i>
-            <span>Live</span>
-        </a>
         <a href="#services" class="nav-item">
-            <i class="fas fa-cogs"></i>
+            <i class="fas fa-laptop-code"></i>
             <span>Services</span>
         </a>
         <a href="#pricing" class="nav-item">
             <i class="fas fa-tags"></i>
             <span>Pricing</span>
         </a>
-        <a href="https://wa.me/923111282552?text=Hi,%20I%20want%20to%20order" target="_blank" rel="noopener noreferrer" class="nav-item highlight">
+        <a href="https://wa.me/923111282552?text=Hi,%20I%20want%20to%20order" target="_blank" class="nav-item highlight">
             <i class="fab fa-whatsapp"></i>
             <span>Order Now</span>
         </a>
-    </nav>
+    </div>
 
     <!-- External JavaScript Link -->
     <script src="script.js"></script>
+    <script>
+    function triggerShineEffect(element) {
+        if (element.classList.contains('active-shine')) {
+            element.classList.remove('active-shine');
+            void element.offsetWidth; /* Reset animation state smoothly */
+        }
+        
+        element.classList.add('active-shine');
+        
+        setTimeout(() => {
+            element.classList.remove('active-shine');
+        }, 800);
+    }
+    </script>
 </body>
 </html>
